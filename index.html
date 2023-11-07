@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/cuprum" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+
+    <title>test-project</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="logo" />
+        <h1>
+          PRINTE
+          <p>Ваша типографія</p>
+        </h1>
+      </div>
+      <div class="header__schedule">
+        <h3>
+          Качественная оперативная цифровая,<br />
+          широкоформатная и сувенирная полиграфия!
+        </h3>
+        <p>Работаем с 9 до 18, вс и сб выходные</p>
+      </div>
+      <div class="header__links">
+        <div class="header__links-block-1">
+          <p>
+            <img src="./assets/user.svg" alt="user" />
+            Личный кабинет
+          </p>
+          <p class="header__links-block1-">maket@test-vertka.ua</p>
+        </div>
+        <div class="contacts">
+          <div class="contacts__wrapper">
+            <h3>
+              <img src="./assets/facebook.svg" alt="facebook" />
+              <img src="./assets/phone.svg" alt="phone" />
+              (044) 345-40-42
+              <img
+                src="./assets/arrow.svg"
+                alt="arrow"
+                onclick="handleArrowClick()"
+              />
+            </h3>
+            <div
+              class="contacts__arrow-wrapper"
+              id="arrow-content"
+              style="visibility: hidden"
+            >
+              <div class="contacts__arrow-rectangle"></div>
+              <h3>
+                <img src="./assets/vodafone.svg" alt="vodafone" />
+                (099) 445-54-18
+              </h3>
+              <h3>
+                <img src="./assets/kyivstar.svg" alt="kyivstar" />
+                (096) 497-78-03
+              </h3>
+              <h3>
+                <img src="./assets/lifecell.svg" alt="lifecell" />
+                (063) 435-16-81
+              </h3>
+            </div>
+          </div>
+        </div>
+        <img class="header__links-cart" src="./assets/cart.svg" alt="cart" />
+      </div>
+    </div>
+    <div class="header__box-shadow">
+      <div class="header__box-shadow-container"></div>
+    </div>
+    <nav>
+      <div class="navbar__wrapper">
+        <div class="navbar__items">
+          <h3>ГЛАВНАЯ</h3>
+        </div>
+        <hr />
+        <div class="navbar__items">
+          <h3>ПРОДУКЦИЯ</h3>
+        </div>
+        <hr />
+
+        <div class="navbar__items">
+          <h3>ДОСТАВКА И ОПЛАТА</h3>
+        </div>
+        <hr />
+
+        <div class="navbar__items">
+          <h3>НОВОСТИ</h3>
+        </div>
+        <hr />
+
+        <div class="navbar__items">
+          <h3>БАЗА ЗНАНИЙ</h3>
+        </div>
+        <hr />
+
+        <div class="navbar__items">
+          <h3>О НАС</h3>
+        </div>
+        <hr />
+
+        <div class="navbar__items">
+          <h3>КОНТАКТЫ</h3>
+        </div>
+        <hr />
+
+        <div class="navbar__items">
+          <img src="./assets/search.svg" />
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="banner__background">
+        <img src="./assets/background.svg" />
+      </div>
+      <div class="banner__text">
+        <h2 class="banner__text-header">
+          Оперативная печать полиграфии от 1 дня!
+        </h2>
+        <hr />
+        <h2>Доставка в любой город Украины</h2>
+        <div class="banner__btn">
+          <button>
+            <h3>Сделать заказ</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="production">
+      <h1>Продукция</h1>
+      <div class="production__wrapper">
+        <div class="production__wrapper-container">
+          <img src="./assets/blank-page.svg" alt="blank page" />
+          <div class="production_text">
+            <h3>Офисная продукция</h3>
+            <div class="production__text-ul">
+              <ul>
+                <li>Визитки</li>
+                <li>Конверты</li>
+                <li>Папки</li>
+                <li>Книги</li>
+                <li>Блокноты</li>
+                <li>Фирменные бланки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="production__wrapper-container">
+          <img src="./assets/road-map.svg" alt="blank page" />
+          <div class="production_text">
+            <h3>Рекламная продукция</h3>
+            <div class="production__text-ul">
+              <ul>
+                <li>Листовки</li>
+                <li>Флаера</li>
+                <li>Буклеты</li>
+                <li>Календари</li>
+                <li>Блокноты</li>
+              </ul>
+              <ul>
+                <li>Плакаты</li>
+                <li>Баннеры</li>
+                <li>Магниты</li>
+                <li>Наклейки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="production__wrapper-container">
+          <img src="./assets/book.svg" alt="blank page" />
+          <div class="production_text">
+            <h3>Офисная продукция</h3>
+            <div class="production__text-ul">
+              <ul>
+                <li>Каталоги</li>
+                <li>Журналы</li>
+                <li>Дисконтные карты</li>
+                <li>Бейджи</li>
+                <li>Гарантийные наклейки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <h1>О нас</h1>
+      <h2>Оперативная печать полиграфии от 1 дня!</h2>
+      <p>
+        Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает
+        от вредного излучения, оно проникает и на глубину 1 м.<br />
+        Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или
+        выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю
+        важных минеральных веществ, которые покидают тело вместе с потом, а
+        загар при этом ляжет ровнее. Находясь на солнце, следует больше
+        двигаться — плавать, делать гимнастику, играть в мяч и т.д. Лучше ходить
+        босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть
+        они отдохнут и получат солнечные лучи и воздух.
+      </p>
+    </div>
+    <div class="straight-line">
+      <hr />
+    </div>
+    <div class="news">
+      <h1>Новости</h1>
+      <div class="news__wrapper">
+        <div class="news__container">
+          <p>14 марта 2018</p>
+          <h3>
+            Оазисное земледелие поднимает культурный субэкваториальный климат,
+            там же можно с палками
+          </h3>
+        </div>
+        <div class="news__container">
+          <p>14 марта 2018</p>
+          <h3>
+            Оазисное земледелие поднимает культурный субэкваториальный климат,
+            там же можно с палками
+          </h3>
+        </div>
+        <div class="news__container">
+          <p>14 марта 2018</p>
+          <h3>
+            Оазисное земледелие поднимает культурный субэкваториальный климат,
+            там же можно с палками
+          </h3>
+        </div>
+      </div>
+      <div class="news__btn">
+        <button><p>Смотреть все новости</p></button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="logo" />
+            <h1>
+              PRINTE
+              <p>Ваша типографія</p>
+            </h1>
+          </div>
+          <div class="footer__logo-second-item">
+            <p>2018 — Все права защищены</p>
+          </div>
+        </div>
+        <div class="footer__schedule roboto">
+          <p>
+            Качественная оперативная цифровая, широкоформатная и сувенирная
+            полиграфия!
+          </p>
+          <p>Работаем с 9 до 18, вс и сб выходные</p>
+        </div>
+        <div class="footer__links roboto">
+          <div class="footer__links-first-column">
+            <p>Главная</p>
+            <p>Продукция</p>
+            <p>Доставка и оплата</p>
+          </div>
+          <div class="footer__links-second-column">
+            <p>Новости</p>
+            <p>База знаний</p>
+            <p>О нас</p>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="contacts">
+            <h3>
+              <img src="./assets/facebook.svg" alt="facebook" />
+              <img src="./assets/phone.svg" alt="phone" />
+              (044) 345-40-42
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </h3>
+          </div>
+          <div class="footer__contacts-link roboto">
+            <p>Контакты</p>
+          </div>
+          <div class="footer__contacts-dev">
+            <p><img src="./assets/devlogo.svg" />ГЛЯНЕЦ - РАЗРАБОТКА САЙТОВ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
